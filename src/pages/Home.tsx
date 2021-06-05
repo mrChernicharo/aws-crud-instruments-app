@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/Header/Header";
-import TextInput from "../components/TextInput/TextInput";
+import InstrumentForm from "../components/InstrumentForm/InstrumentForm";
 
 interface Props {}
 
@@ -9,7 +9,7 @@ const Home = () => {
     <div>
       <Header />
       home
-      <TextInput />
+      <InstrumentForm />
     </div>
   );
 };

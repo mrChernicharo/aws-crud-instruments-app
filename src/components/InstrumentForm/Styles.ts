@@ -26,6 +26,12 @@ export const InputStyles = {
     borderColor: "#fc8e34",
     borderWidth: 2,
   },
+  // "& label": {
+  //   color: appGreen,
+  // },
+  "& label.Mui-focused": {
+    color: appGreen,
+  },
 };
 
 export const rootInputStyles2 = {
