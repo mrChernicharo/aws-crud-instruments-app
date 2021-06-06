@@ -1,0 +1,7 @@
+type Instrument @model {
+  id: ID!
+  instrument: String!
+  brand: String
+  year: Int
+  price: Float!
+}

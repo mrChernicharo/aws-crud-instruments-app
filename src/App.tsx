@@ -1,6 +1,6 @@
 import "./App.css";
 import Home from "./pages/Home";
-import Amplify from "aws-amplify";
+import Amplify, { API, graphqlOperation } from "aws-amplify";
 import awsConfig from "./aws-exports";
 import {
   AmplifyContainer,
@@ -8,6 +8,8 @@ import {
   withAuthenticator,
 } from "@aws-amplify/ui-react";
 import { FiBookOpen, FiAirplay, FiAlertOctagon } from "react-icons/fi";
+import { useState, useEffect } from "react";
+import { listInstruments } from "./graphql/queries";
 
 Amplify.configure(awsConfig);
 
@@ -18,6 +20,7 @@ function App() {
 
       <AmplifyContainer>
         <FiAlertOctagon size={50} className="App-logo" />
+
         <AmplifySignOut />
       </AmplifyContainer>
     </>
