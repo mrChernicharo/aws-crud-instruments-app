@@ -1,5 +1,5 @@
 import "./App.css";
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home";
 import Amplify, { API, graphqlOperation } from "aws-amplify";
 import awsConfig from "./aws-exports";
 import {
