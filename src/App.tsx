@@ -1,5 +1,3 @@
-import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import Home from "./pages/Home";
 import Amplify from "aws-amplify";
@@ -9,6 +7,7 @@ import {
   AmplifySignOut,
   withAuthenticator,
 } from "@aws-amplify/ui-react";
+import { FiBookOpen, FiAirplay, FiAlertOctagon } from "react-icons/fi";
 
 Amplify.configure(awsConfig);
 
@@ -18,6 +17,7 @@ function App() {
       <Home />
 
       <AmplifyContainer>
+        <FiAlertOctagon size={50} className="App-logo" />
         <AmplifySignOut />
       </AmplifyContainer>
     </>
